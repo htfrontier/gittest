@@ -6,8 +6,6 @@ from opentelemetry.sdk.trace.export import (
     ConsoleSpanExporter,
 )
 
-
-
 provider = TracerProvider()
 processor = BatchSpanProcessor(ConsoleSpanExporter())
 provider.add_span_processor(processor)
